@@ -1,0 +1,53 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.fald.beritasainstek.fisika">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:measureWithLargestChild="false"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/layout_toolbar" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Ketua Jurusan:\n Dr. Yudha Setya Perkasa, M.Si\n
+Sekretaris :\n Moh. Nurul Subkhi, M.Si\n
+Detail Info.:\n www.fi.uinsgd.ac.id\n
+
+Visi\n
+Berperan aktif dalam pengembangan Ilmu Fisika dengan tetap memegang teguh nilai-nilai keislaman sehingga pada tahun 2018 memiliki daya saing untuk membawa UIN Sunan Gunung Djati sejajar dengan perguruan tinggi terbaik lainnya di Indonesia.\n
+
+Misi\n
+1. Menyelenggarakan pendidikan dan pengajaran yang profesional di bidang Fisika sehingga dapat berperan dalam pembangunan nasional Indonesia.\n
+2. Mengembangkan karya penelitian dan pengkajian dalam bidang fisika berbasis local content yang aplikatif dan relevan untuk keperluan pendidikan, industri, kebijakan publik.\n
+3. Mengaplikasikan hasil penelitian bidang fisika sehingga dapat berperan serta secara aktif dalam meningkatkan kesejahteraan masyarakat Indonesia.\n
+
+Tujuan\n
+1. Menghasilkan sarjana sains berakhlak mulia yang profesional, adaptif serta kompetitif sehingga mampu menjawab tuntutan kebutuhan stake holder di bidang penelitian, pendidikan, industri maupun kewirausahaan.\n
+2. Menghasilkan sarjana sains yang kritis menyikapi persoalan, memiliki daya analisis tinggi, inovatif dan kreatif dalam berkarya.\n
+3. Menghasilkan sarjana sains yang jujur dalam perkataan dan perbuatan serta memiliki etos kerja yang tinggi.\n
+4. Menghasilkan lulusan yang mampu bekerja secara mandiri dan bekerja dalam tim.\n
+5. Menghasilkan lulusan yang mampu memperkuat penguasaan dan memperluas wawasan kompetensi keahlian dalam merancang, melaksanakan dan menganalisis data hasil eksperimen fisika.\n
+6. Menghasilkan lulusan yang mampu berperan sebagai pembaharu dalam masyarakat"
+            android:id="@+id/textView"/>
+
+    </LinearLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/layout_header"
+        app:menu="@menu/item_navigasi" />
+</android.support.v4.widget.DrawerLayout>

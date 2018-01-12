@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">BeritaSainstek</string>
+    <string name="openDrawer">Drawer dibuka</string>
+    <string name="closeDrawer">Drawer ditutup</string>
+    <string name="navigation_view_item_1">Berita</string>
+
+    <string name="navigasi_kategori_2">Fakultas</string>
+    <string name="navigation_view_item_2">Visi Misi</string>
+    <string name="navigation_view_item_3">Senat</string>
+    <string name="navigation_view_item_4">Dekanat</string>
+    <string name="navigation_view_item_5">Tata Usaha</string>
+
+    <string name="navigasi_kategori_3">Jurusan</string>
+    <string name="navigation_view_item_6">Matematika</string>
+    <string name="navigation_view_item_7">Biologi</string>
+    <string name="navigation_view_item_8">Fisika</string>
+    <string name="navigation_view_item_9">Kimia</string>
+    <string name="navigation_view_item_10">Teknik Informatika</string>
+    <string name="navigation_view_item_11">Agroteknologi</string>
+    <string name="navigation_view_item_12">Teknik Elektro</string>
+
+    <string name="navigasi_kategori_4">Tambahan</string>
+    <string name="navigation_view_item_13">About</string>
+
+    <string name="title_activity_1">Visi Misi</string>
+    <string name="title_activity_2">Senat</string>
+    <string name="title_activity_3">Dekanat</string>
+    <string name="title_activity_4">Tata Usaha</string>
+    <string name="title_activity_5">Matematika</string>
+    <string name="title_activity_6">Biologi</string>
+    <string name="title_activity_7">Fisika</string>
+    <string name="title_activity_8">Kimia</string>
+    <string name="title_activity_9">Teknik Informatika</string>
+    <string name="title_activity_10">Agroteknologi</string>
+    <string name="title_activity_11">Teknik Elektro</string>
+    <string name="title_activity_12">About</string>
+</resources>

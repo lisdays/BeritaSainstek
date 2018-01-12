@@ -1,0 +1,55 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.fald.beritasainstek.VisiMisi">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:measureWithLargestChild="false"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/layout_toolbar" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Visi\n
+
+Unggul dan kompetetif secara nasional (2020) dan internasional (2030) dalam
+mengembangkan sains dan teknologi yang meneguhkan keimanan dan akhlak karimah
+berbasis wahyu memandu ilmu.\n
+
+Misi\n
+
+Menyelenggarakan pendidikan tinggi dalam bidang Matematika, Biologi, Fisika,
+Kimia, Teknik Informatika, Agroteknologi, dan Teknik Elektro yang profesional,
+akuntabel, dan berdaya saing di tingkat nasional dan internasional yang dapat
+meneguhkan keimanan dan akhlak karimah berbasis wahyu memandu ilmu;\n
+Menyelenggarakan penelitian sains dan teknologi untuk mengembangkan ilmu
+dasar dan terapan bagi peningkatan penguasaan sains dan teknologi masyarakat
+muslim berbasis wahyu memandu ilmu;\n
+Menyelenggarakan pengabdian kepada masyarakat dalam bidang sains dan
+teknologi yang mampu mengembangkan potensi keunggulan dan kearifan lokal bagi
+kemandirian dan peningkatan daya saing masyarakat berbasis wahyu memandu
+ilmu;\n
+Menjalin kerjasama dengan berbagai lembaga untuk memperkokoh jejaring dan
+kemitraan ditingkat nasional maupun internasional."
+            android:id="@+id/textView"/>
+
+    </LinearLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/layout_header"
+        app:menu="@menu/item_navigasi" />
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,50 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.fald.beritasainstek.agrotek">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:measureWithLargestChild="false"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/layout_toolbar" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Ketua Jurusan:\n Ir. Ahmad Taofik, MP.\n
+Sekretaris :\n Dr. Liberty, M.Si.\n
+Detail Info.:\n –\n
+
+Visi\n
+Menjadi jurusan unggulan dalam bidang Agri-Tech yang berwawasan ekologis dan dijiwai oleh nilai-nilai islam\n
+
+Misi\n
+1. Menyelenggarakan pendidikan dalam bidang Agri-Tech sesuai perkembangan ilmu dan teknologi untuk menghasilkan lulusan yang cakap, berdaya saing, dan cerdas secara spiritual.\n
+2. Mengembangkan penelitian yang berorientasi pada pengembangan ilmu dan teknologi Agri-Tech dan kebutuhan masyarakat.\n
+3. Melibatkan diri secara aktif dalam menyelesaikan permasalahan yang terjadi pada komunitas agro.\n
+4. Mensinergikan kegiatan pendidikan, penelitian, dan pengabdian masyarakat.\n
+
+Tujuan\n
+1. Menghasilkan lulusan yang handal, berdaya saing, dan cerdas intelektual, emosional, dan spiritual.\n
+2. Menghasilkan penelitian yang mampu memenuhi kebutuhan dan dinamika masyarakat serta perkembangan IPTEK."
+            android:id="@+id/textView"/>
+
+    </LinearLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/layout_header"
+        app:menu="@menu/item_navigasi" />
+</android.support.v4.widget.DrawerLayout>

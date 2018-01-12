@@ -1,0 +1,53 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.fald.beritasainstek.biologi">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:measureWithLargestChild="false"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/layout_toolbar" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Ketua Jurusan: \nDr. Tri Cahyanto, M.Si\n
+Sekretaris :\n Dr. Ana Widiana, M.Si.\n
+Detail Info.:\n http://bio.uinsgd.ac.id\n
+
+Visi\n
+Visi Jurusan Biologi Fakultas Sains dan Teknologi UIN Sunan Gunung Djati adalah pada tahun 2018 menjadi jurusan yang unggul dan kompetitif di tingkat nasional dalam bidang biologi dan terapannya untuk menunjang keberlanjutan lingkungan serta meneguhkan keimanan dan akhlakul karimah.\n
+Visi ini selaras dengan visi FST yaitu menjadikan Fakultas yang unggul dan kompetitif yang mampu mengintegrasikan ilmu agama, sains dan teknologi berlandaskan paradigma wahyu memandu ilmu, serta sejalan dengan visi UIN Sunan Gunung Djati Bandung yaitu menjadi universitas islam yang unggul dan kompetitif.\n
+
+Misi\n
+Misi dari Jurusan Biologi Fakultas Sains dan Teknologi UIN SGD Bandung adalah:\n
+1. Menyelenggarakan pendidikan tinggi yang berbasis penelitian dan pengembangan biologi yang berkualitas sehingga menghasilkan karya yang mampu memberikan kontribusi dalam berbagai bidang khususnya bidang biologi.\n
+2. Mengembangkan penelitian biologi dan terapannya dalam lingkup biologi fungsi dan perkembangan, biologi lingkungan, biologi pangan, serta biologi medika yang menunjang keberlanjutan lingkungan serta meneguhkan keimanan dan akhlakul karimah.\n
+3. Menyelenggarakan pengabdian dan pemberdayaan kepada masyarakat dengan berbasis keilmuan biologi dan terapannya yang menunjang keberlanjutan lingkungan serta meneguhkan keimanan dan akhlakul karimah.\n
+
+Tujuann\n
+Tujuan Jurusan Biologi Fakultas Sains dan Teknologi UIN SGD Bandung adalah :\n
+1. Menghasilkan Sarjana Biologi yang beriman dan bertaqwa kepada Allah SWT, sehat jasmani dan rohani, serta memiliki kemampuan akademik yang unggul sehingga dapat memberikan kontribusi yang penting dalam pengembangan Biologi sebagai ilmu dasar dan terapan\n
+2. Menghasilkan karya-karya penelitian yang inovatif dan berkualitas dalam bidang biologi dan terapannya untuk menunjang keberlanjutan lingkungan yang meneguhkan keimanan dan akhlakul karimah.\n
+3. Menyelenggarakan pengabdian dan pemberdayaan masyarakat melalui kegiatan diseminasi hasil-hasil penelitian biologi dan terapannya sesuai dengan kebutuhan masyarakat"
+            android:id="@+id/textView"/>
+
+    </LinearLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/layout_header"
+        app:menu="@menu/item_navigasi" />
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,51 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.fald.beritasainstek.matematika">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:measureWithLargestChild="false"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/layout_toolbar" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Ketua Jurusan:\n Siti Julaeha, M.Si\n
+
+Sekretaris Jurusan:\n –\n
+
+Detail Info.: \nhttp://math.uinsgd.ac.id\n
+
+Visi\n
+Menjadi penyelenggara pendidikan tinggi bidang studi matematika yang berkualitas secara nasional dalam bidang pengajaran, penelitian, dan penerapan di masyarakat yang dilandasi oleh nilai-nilai keislaman pada tahun 2020.\n
+
+Misi\n
+1.Menyelenggarakan pendidikan tinggi yang berorientasi pada pengkajian, penguasaan dan pengembangan matematika yang berkualitas dan mampu menyiapkan lulusan yang terampil dan profesional dalam bidang matematika dilandasi nilai – nilai keislaman.\n
+2.Menyelenggarakan kegiatan penelitian untuk mendukung pengembangan matematika dengan dilandasi semangat mentafakuri alam dan mentadabburi kalamullah.\n
+3.Menyelenggarakan pengamalan keilmuan matematika civitas akademika dengan melaksanakan kegiatan pengabdian kepada masyarakat secara berkesinambungan dengan dilandasi amal islami.\n
+4.Menyelenggarakan kerjasama dengan sejumlah pihak terkait bagi pengembangan matematika sehingga mampu menyiapkan lulusan yang terampil dan profesional di bidang matematika dilandasi nilai-nilai ukhuwah islamiyah.\n
+
+Tujuan\n
+Menghasilkan Sarjana S1 Matematika yang mampu berperan serta di berbagai bidang pekerjaan serta mampu mengikuti perkembangan IPTEKS, adaptif, dapat melanjutkan studi pada jenjang yang lebih tinggi baik bidang matematika maupun bidang lain yang terkait, mempunyai komitmen, kepercayaan diri, kecerdasan spiritual islami, dan etos kerja tinggi."
+            android:id="@+id/textView"/>
+
+    </LinearLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/layout_header"
+        app:menu="@menu/item_navigasi" />
+</android.support.v4.widget.DrawerLayout>

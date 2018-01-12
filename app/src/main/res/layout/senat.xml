@@ -1,0 +1,53 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.fald.beritasainstek.senat">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:measureWithLargestChild="false"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/layout_toolbar" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Ketua	:\nEsih Sukaesih, M.Si.\n
+Sekretaris	:\nAgung Wahana, MT.\n
+Anggota	:\nDr. H. Opik Taupik Kurahman, M.Ag.\n
+Dr. Ir. Cecep Hidayat, MP.\n
+Dr. Yani Suryani, S.Pd., M.Si.\n
+Dr. Asep Supriadin, S.Si., M.Si.\n
+Prof. Dr. H. M. Ali Ramdhani\n
+Mohamad Irfan, ST., M.Kom.\n
+Dr. Tri Cahyanto, S.Pd., M.Si.\n
+Dr. Yudha Satya Perkasa, M.Si.\n
+Edi Mulyana, MT.\n
+Tety Sudiarti, S.Pd., M.Si.\n
+Siti Julaeha, S.Si., M.Si.\n
+Ir. Ahmad Taofik, MP.\n
+Anggita Rahmi Hafsari, M.Si.\n
+Dr. Bebeh Wahid Nuryadin, M.Si.\n
+Soni Setiadji, S.Si., MT.\n
+Ir. Kundang Harisman, M.Si.\n
+Nanang Ismail, ST., MT."
+            android:id="@+id/textView"/>
+
+    </LinearLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/layout_header"
+        app:menu="@menu/item_navigasi" />
+</android.support.v4.widget.DrawerLayout>

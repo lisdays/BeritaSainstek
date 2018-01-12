@@ -1,0 +1,49 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.fald.beritasainstek.kimia">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:measureWithLargestChild="false"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/layout_toolbar" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Ketua Jurusan:\n Tety Sudiarti, S.Pd., M.Si.\n
+Sekretaris :\n Eko Prabowo Hadisantoso, M.PKim.\n
+Detail Info.:\n http://chem.uinsgd.ac.id\n
+
+Visi\n
+Menjadikan jurusan kimia yang berasaskan Islam yang unggul di tingkat nasional pada tahun 2020 dan regional pada tahun 2025.\n
+
+Misi\n
+Menyelenggarakan pendidikan tinggi yang Islamis, inovatif, kreatif, dan berbasis penelitian serta membangun kemitraan sehingga menghasilkan sarjana kimia yang berakhlakul karimah, berdaya saing tinggi dan berguna bagi masyarakat.\n
+
+Tujuan\n
+1.Mendidik mahasiswa secara Islami untuk mempelajari dasar-dasar ilmu Kimia dan aplikasinya.\n
+2.Menghasilkan sarjana kimia yang terampil di laboratorium.\n
+3.Menghasilkan sarjana kimia yang mampu berkomunikasi dengan benar, baik lisan maupun tulisan.\n
+4.Menghasilkan sarjana kimia yang mampu bersaing di tingkat nasional dan regional."
+            android:id="@+id/textView"/>
+
+    </LinearLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/layout_header"
+        app:menu="@menu/item_navigasi" />
+</android.support.v4.widget.DrawerLayout>
